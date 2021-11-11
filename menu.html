@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Menu-items</title>
+        <style>
+            .available{
+                background-color:azure;
+                padding:10px;
+                margin: 25 25 25 25;
+                font-size:x-large;
+                border-top-left-radius: 60px 60px;
+                border-bottom-right-radius: 60px 60px ;
+            }
+            .not-available{
+                background-color:cornsilk;
+                padding:10px;
+                margin:25 25 25 25;
+                font-size: x-large;
+                border-top-right-radius: 60px 60px;
+                border-bottom-left-radius: 60px 60px ;
+            }
+            #menu-tag{
+                text-align: center;
+                font-size: 50px;
+                background-color:gainsboro;
+                margin: 25 25 25 25;
+                padding:10px;
+                border-radius: 80px;
+            }
+        </style>
+    </head>
+    <body style="margin:0;background-color:coral;">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+            intent="WELCOME"
+            chat-title="Pizza_Order_Bot"
+            agent-id="d50c4445-0efb-4e7f-896b-e797c0b4eb30"
+            language-code="en"
+        ></df-messenger>
+        <h1 id="menu-tag">Menu</h1>
+        <div class="available">
+            <h1>Available - Types</h1>
+            <ul>
+                <li>Mushroom</li>
+                <li>Margherita</li>
+                <li>Marconi and Cheese</li>
+                <li>Pepperoni</li>
+                <li>Double Cheese</li>
+                <li>Vegetarian</li>
+                <li>BBQ</li>
+                <li>Hawaii</li>
+            </ul>
+        </div>
+        <div class="not-available">
+            <h1>Not Available - Types</h1>
+            <ul>
+                <li>Americana</li>
+                <li>Anchovie</li>
+                <li>Pineapple</li>
+                <li>Broccoli</li>
+                <li>Meat</li>
+                <li>Tuna</li>
+                <li>Capricciosa</li>
+                <li>Pugliese</li>
+                <li>Marinara</li>
+                <li>Quattro Formaggi</li>
+                <li>Neopoliran</li>
+                <li>Salami</li>
+                <li>Oilve</li>
+            </ul>
+        </div>
+    </body>
+</html>
